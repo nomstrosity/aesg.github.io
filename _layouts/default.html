@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/css/app.css">
+    </head>
+    <body>
+        {% include navigation.html %}
+        <div class="container">
+            {{ content }}
+        </div>
+        {% if page.section == 'home' %}
+            <div class="footer footer-top">
+              <div class="container">
+                <div class="footer-top-title">Some of our valued clients:</div>
+                <div class="valued-clients">
+                    <table>
+                      <tr>
+                        <td><img class="img-responsive" alt="Freemasons" src="/assets/img/logos/Freemasons.png"></td>
+                        <td><img class="img-responsive" alt="Colac-Otway" src="/assets/img/logos/Colac-Otway.png"></td>
+                        <td><img class="img-responsive" alt="Mitchell" src="/assets/img/logos/Mitchell.png"></td>
+                        <td><img class="img-responsive" alt="ambulance" src="/assets/img/logos/ambulance.png"></td>
+                        <td><img class="img-responsive" alt="body-corporate" src="/assets/img/logos/body-corporate.png"></td>
+                        <td><img class="img-responsive" alt="each" src="/assets/img/logos/each.png"></td>
+                        <td><img class="img-responsive" alt="estia-health" src="/assets/img/logos/estia-health.png"></td>
+                      </tr>
+                    </table>
+                </div>
+              </div>
+            </div>
+        {% endif %}
+        {% include footer.html %}
+    </body>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="/assets/js/app.js"></script>
+</html>

@@ -1,0 +1,26 @@
+<div class="navbar-header navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">AESG</a>
+        <div class="navbar-collapse collapse">
+          <div class="header-topbar">
+            <span class="tel"><b>Telephone</b> 03 9499 6504</span>
+            <span class="email"><b>Email</b> <a href="mailto:info@aesg.com.au">info@aesg.com.au</a></span>
+            <span class="clientaccess"><a href="https://abas.aesg.com.au/">ABAS Client Portal</a></span>
+          </div>
+
+          <ul class="nav navbar-nav">
+              <li {% if page.section == "index" %}class="active"{% endif %}><a href="/">Home</a></li>
+              <li {% if page.section == "about" %}class="active"{% endif %}><a href="/about">About Us</a></li>
+              <li {% if page.section == "resources" %}class="active"{% endif %}><a href="/resources">Resource Centre</a></li>
+              <li {% if page.section == "abas" %}class="active"{% endif %}><a href="/abas">ABAS</a></li>
+              <li {% if page.section == "testimonials" %}class="active"{% endif %}><a href="/testimonials">Testimonials</a></li>
+              <li {% if page.section == "contact" %}class="active"{% endif %}><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,414 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	color: #231f20;
+	padding-top: 80px;
+}
+h1 {
+	color: #3997d7;
+	font-size: 18px;
+}
+h2, form legend {
+	color: #146b95;
+	font-size: 16px;
+}
+h3 {
+	color: #6d6e71;
+	font-size: 14px;
+	line-height: 1.4;
+}
+.navbar {
+	height: 80px;
+}
+.header-topbar {
+	display: none;
+}
+.navbar-inverse {
+	background-color: #FFF;
+	border: none;
+}
+.navbar-brand {
+	width: 60px;
+	height: 60px;
+	background: url(/assets/img/AESG-logo.jpg) no-repeat;
+	background-size: cover;
+	text-indent: -9999px;
+}
+.navbar-inverse .navbar-toggle {
+	border: none;
+	margin-right: 0;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+	background-color: #3997d7;
+	height: 4px;
+	border-radius: 2px;
+	width: 24px;
+}
+.navbar-open, .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+	background-color: #3997d7;
+}
+.navbar-inverse .navbar-open .icon-bar, .navbar-inverse .navbar-toggle:hover .icon-bar, .navbar-inverse .navbar-toggle:focus .icon-bar {
+	background-color: #FFF;
+}
+.navbar-toggle .icon-bar + .icon-bar {
+	margin-top: 3px;
+}
+.navbar-collapse .navbar-nav {
+	position: absolute;
+	right: 15px;
+	top: 40px;
+	width: 200px;
+	float: right;
+	margin: 0;
+	background-color: #3997d7;
+}
+.navbar-inverse .navbar-nav > li > a {
+	color: #FFF;
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+	background-color: #146b95;
+}
+.banner {
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	background-color: #EEE;
+	width: 100%;
+	height: 250px;
+}
+.banner-title {
+	display: none;
+}
+.banner-about-us {
+	background-image: url(/assets/img/about-us.jpg);
+}
+.banner-resource-centre {
+	background-image: url(/assets/img/Resource-Centre.jpg);
+}
+.banner-abas {
+	background-image: url(/assets/img/ABAS.jpg);
+}
+.banner-testimonials {
+	background-image: url(/assets/img/Testimonials.jpg);
+}
+.banner-contact {
+	background-image: url(/assets/img/Contact.jpg);
+}
+#audit-reports .box-title {
+	background-position: 0 0;
+}
+#audit-reports .box-image {
+	background-image: url(/assets/img/Audit-Reports.jpg);
+	background-position: center center;
+}
+#consulting .box-title {
+	background-position: 0 -200px;
+}
+#consulting .box-image {
+	background-image: url(/assets/img/Consulting.jpg);
+	background-position: center center;
+}
+#facility-management .box-title {
+	background-position: 0 -400px;
+}
+#facility-management .box-image {
+	background-image: url(/assets/img/Facility-Management.jpg);
+	background-position: center top;
+}
+#maintenance .box-title {
+	background-position: 0 -600px;
+}
+#maintenance .box-image {
+	background-image: url(/assets/img/Maintenance.jpg);
+	background-position: center center;
+}
+#OHS-reporting .box-title {
+	background-position: 0 -800px;
+}
+#OHS-reporting .box-image {
+	background-image: url(/assets/img/OHS-Reporting.jpg);
+	background-position: center center;
+}
+#auditing .box-title {
+	background-position: 0 -1000px;
+}
+#auditing .box-image {
+	background-image: url(/assets/img/Auditing.jpg);
+	background-position: center center;
+}
+.box {
+	position: relative;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.box-title {
+	background-image: url(/assets/img/box-bg.png);
+	background-repeat: repeat-x;
+	color: #FFFFFF;
+	font-size: 14px;
+	padding: 10px 60px 0 15px;
+	height: 60px;
+	line-height: 20px;
+}
+.box-image {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 40px;
+	height: 40px;
+	background-size: cover;
+}
+.box-content, .box > h1 {
+	display: none;
+}
+.read-more-bt {
+	height: 26px;
+	background: url(/assets/img/read-more.png) no-repeat scroll;
+	cursor: pointer;
+	margin-bottom: 15px;
+}
+.read-more {
+	display: none;
+}
+.box-open {
+	cursor: default;
+}
+.box-open .box-image {
+	position: relative;
+	right: auto;
+	top: auto;
+	width: auto;
+	height: 150px;
+	cursor: pointer;
+}
+.box-open .box-title {
+	position: absolute;
+	z-index: 10;
+	width: 130px;
+	height: 130px;
+	left: 10px;
+	top: 10px;
+	padding: 10px;
+}
+.box-open > h1 {
+	display: block;
+}
+blockquote {
+	font-size: 12px;
+}
+blockquote img {
+	float: right;
+	margin: 0 0 10px 15px;
+}
+form {
+	margin-bottom: 20px;
+}
+.form-horizontal .form-group {
+	margin: 0 0 5px;
+}
+textarea {
+	width: 100%;
+}
+.control-label {
+	padding-bottom: 2px;
+}
+.btn-default {
+	margin-top: 10px;
+}
+.footer-top {
+	margin-top: 10px;
+	padding: 30px 0 20px 0;
+	background-color: #818285;
+}
+.footer-bottom {
+	padding-top: 20px;
+	background-color: #3a3a3c;
+}
+.footer .container {
+	padding: 20px 30px 0 30px;
+}
+.footer-top-title {
+	color: #FFF;
+	font-size: 110%;
+	margin-bottom: 20px;
+}
+.footer {
+	color: #FFFFFF;
+}
+
+.footer .associates {
+	padding-top: 30px;
+	padding-bottom:40px;
+}
+.footer .associates,
+.footer .valued-clients {
+	text-align: center;
+}
+.footer .associates img { margin: 0 auto; }
+.footer .valued-clients { margin-bottom: 2em; }
+.footer .valued-clients table {
+	width: 100%;
+}
+.footer .valued-clients img { }
+
+
+@media (min-width: 768px) {
+	body {
+		padding-top: 138px;
+	}
+	h1 {
+		font-size: 22px;
+	}
+	h2, form legend {
+		font-size: 18px;
+	}
+	h3 {
+		font-size: 16px;
+	}
+	blockquote {
+		font-size: 14px;
+	}
+	.navbar {
+		height: 138px;
+		margin: 0;
+	}
+	.navbar-brand {
+		width: 108px;
+		height: 108px;
+		background: url(/assets/img/AESG-logo.jpg) no-repeat;
+		background-size: cover;
+		text-indent: -9999px;
+	}
+	.navbar-fixed-top {
+		background: url(/assets/img/header-bg.jpg) repeat-x top center #FFF;
+	}
+	.header-topbar {
+		display: block;
+		height: 32px;
+		color: #c7c8ca;
+		line-height: 32px;
+		font-size: 12px;
+	}
+	.header-topbar span {
+		padding-left: 30px;
+	}
+	.header-topbar span b {
+		padding-right: 7px;
+	}
+	.header-topbar .email a { color: #ccc; }
+	.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+		margin-left: 30px;
+	}
+	.navbar-inverse .navbar-nav {
+		position: relative;
+		right: auto;
+		top: auto;
+		width: auto;
+		float: right;
+		margin: 48px 24px 0 0;
+		background-color: transparent;
+	}
+	.navbar-inverse .navbar-nav > li > a {
+		color: #146b95;
+		padding: 6px;
+	}
+	.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+		color: #3997d7;
+		background-color: transparent;
+	}
+	.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+		color: #3997d7;
+	}
+	.banner-title {
+		display: block;
+		background: url(/assets/img/box-bg.png) repeat-x scroll 0 -1200px;
+		width: 190px;
+		height: 190px;
+		position: absolute;
+		right: 30px;
+		top: 30px;
+		font-size: 24px;
+		color: #FFFFFF;
+		line-height: 190px;
+		padding: 0 20px;
+	}
+	.banner-title span {
+		display: inline-block;
+		vertical-align: middle;
+		line-height: 40px;
+	}
+	.box {
+		padding: 0 30px;
+	}
+	.box-content, .page-content {
+		padding: 20px 30px;
+	}
+	.read-more-bt {
+		display: none !important;
+	}
+	.read-more {
+		display: block !important;
+	}
+	.box-open .box-title {
+		width: 200px;
+		height: 200px;
+		left: 30px;
+		top: 28px;
+		line-height: 35px;
+		padding: 10px 20px;
+	}
+	.box > h1, .container >h1 {
+		padding-left: 30px;
+		margin-bottom: 0;
+	}
+	.box-content > :first-child, .page-content > :first-child, .col-sm-6 > :first-child, .read-more > :first-child {
+		margin-top: 0;
+	}
+	.box-title {
+		font-size: 24px;
+		line-height: 60px;
+		padding: 0 20px;
+	}
+	.box-title br {
+		display: none;
+	}
+	.box-image {
+		right: 40px;
+	}
+	.box-open {
+		padding: 0;
+		cursor: default;
+	}
+	.box-open .box-image {
+		height: 256px;
+	}
+	.footer-top-title {
+		font-size: 130%;
+		padding-left: 20px;
+	}
+	.footer .logo {
+		padding-left: 30px;
+	}
+	.footer .logo img {
+		height: 50px;
+	}
+	.footer .sep {
+		display: none;
+	}
+
+	.footer .valued-clients img, .footer .associates img {
+		max-width: 120px;
+	}
+}
+
+@media (min-width: 992px) {
+	.navbar-nav {
+		margin: 48px 20px 0 0;
+	}
+	.navbar-inverse .navbar-nav > li > a {
+		padding: 10px;
+	}
+	.footer .valued-clients img {
+		max-width: 140px;
+	}
+}
