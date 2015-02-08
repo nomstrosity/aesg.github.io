@@ -9,30 +9,15 @@
     </head>
     <body>
         {% include navigation.html %}
-        <div class="container">
+        <main class="container">
             {{ content }}
-        </div>
+        </main>
+        <footer>
         {% if page.section == 'home' %}
-            <div class="footer footer-top">
-              <div class="container">
-                <div class="footer-top-title">Some of our valued clients:</div>
-                <div class="valued-clients">
-                    <table>
-                      <tr>
-                        <td><img class="img-responsive" alt="Freemasons" src="/assets/img/logos/Freemasons.png"></td>
-                        <td><img class="img-responsive" alt="Colac-Otway" src="/assets/img/logos/Colac-Otway.png"></td>
-                        <td><img class="img-responsive" alt="Mitchell" src="/assets/img/logos/Mitchell.png"></td>
-                        <td><img class="img-responsive" alt="ambulance" src="/assets/img/logos/ambulance.png"></td>
-                        <td><img class="img-responsive" alt="body-corporate" src="/assets/img/logos/body-corporate.png"></td>
-                        <td><img class="img-responsive" alt="each" src="/assets/img/logos/each.png"></td>
-                        <td><img class="img-responsive" alt="estia-health" src="/assets/img/logos/estia-health.png"></td>
-                      </tr>
-                    </table>
-                </div>
-              </div>
-            </div>
+            {% include clients.html %}
         {% endif %}
         {% include footer.html %}
+        </footer>
     </body>
     <script src="//code.jquery.com/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>

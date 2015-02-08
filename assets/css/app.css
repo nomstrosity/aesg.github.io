@@ -17,6 +17,7 @@ h3 {
 	font-size: 14px;
 	line-height: 1.4;
 }
+main { margin-bottom: 40px; }
 .navbar {
 	height: 80px;
 }
@@ -27,12 +28,10 @@ h3 {
 	background-color: #FFF;
 	border: none;
 }
-.navbar-brand {
+.navbar-brand { padding-top: 0;}
+.navbar-brand img {
 	width: 60px;
 	height: 60px;
-	background: url(/assets/img/AESG-logo.jpg) no-repeat;
-	background-size: cover;
-	text-indent: -9999px;
 }
 .navbar-inverse .navbar-toggle {
 	border: none;
@@ -69,15 +68,28 @@ h3 {
 	background-color: #146b95;
 }
 .banner {
-	position: relative;
 	background-size: cover;
 	background-position: center;
 	background-color: #EEE;
-	width: 100%;
 	height: 250px;
+	margin: 0 -20px;
 }
 .banner-title {
-	display: none;
+	display: block;
+	background: url(/assets/img/box-bg.png) repeat-x scroll 0 -1200px;
+	width: 190px;
+	height: 190px;
+	font-size: 24px;
+	color: #FFFFFF;
+	line-height: 190px;
+	padding: 0 20px;
+	float: right;
+	margin: 30px;
+}
+.banner-title span {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 40px;
 }
 .banner-about-us {
 	background-image: url(/assets/img/about-us.jpg);
@@ -178,6 +190,7 @@ h3 {
 	right: auto;
 	top: auto;
 	width: auto;
+	margin: 0 -20px;
 	height: 150px;
 	cursor: pointer;
 }
@@ -186,7 +199,6 @@ h3 {
 	z-index: 10;
 	width: 130px;
 	height: 130px;
-	left: 10px;
 	top: 10px;
 	padding: 10px;
 }
@@ -203,6 +215,7 @@ blockquote img {
 form {
 	margin-bottom: 20px;
 }
+.form-actions { padding-top: 20px;}
 .form-horizontal .form-group {
 	margin: 0 0 5px;
 }
@@ -212,9 +225,6 @@ textarea {
 .control-label {
 	padding-bottom: 2px;
 }
-.btn-default {
-	margin-top: 10px;
-}
 .footer-top {
 	margin-top: 10px;
 	padding: 30px 0 20px 0;
@@ -223,9 +233,6 @@ textarea {
 .footer-bottom {
 	padding-top: 20px;
 	background-color: #3a3a3c;
-}
-.footer .container {
-	padding: 20px 30px 0 30px;
 }
 .footer-top-title {
 	color: #FFF;
@@ -240,17 +247,16 @@ textarea {
 	padding-top: 30px;
 	padding-bottom:40px;
 }
+.footer .associates img { margin: 0 auto; }
 .footer .associates,
 .footer .valued-clients {
 	text-align: center;
 }
-.footer .associates img { margin: 0 auto; }
 .footer .valued-clients { margin-bottom: 2em; }
 .footer .valued-clients table {
 	width: 100%;
 }
-.footer .valued-clients img { }
-
+.footer .valued-clients img { height: 55px; max-width: 130px; margin: 20px 10px; }
 
 @media (min-width: 768px) {
 	body {
@@ -268,16 +274,14 @@ textarea {
 	blockquote {
 		font-size: 14px;
 	}
+	.footer .valued-clients img { height: 65px; }
 	.navbar {
 		height: 138px;
 		margin: 0;
 	}
-	.navbar-brand {
+	.navbar-brand img {
 		width: 108px;
 		height: 108px;
-		background: url(/assets/img/AESG-logo.jpg) no-repeat;
-		background-size: cover;
-		text-indent: -9999px;
 	}
 	.navbar-fixed-top {
 		background: url(/assets/img/header-bg.jpg) repeat-x top center #FFF;
@@ -296,16 +300,13 @@ textarea {
 		padding-right: 7px;
 	}
 	.header-topbar .email a { color: #ccc; }
-	.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
-		margin-left: 30px;
-	}
 	.navbar-inverse .navbar-nav {
 		position: relative;
 		right: auto;
 		top: auto;
 		width: auto;
 		float: right;
-		margin: 48px 24px 0 0;
+		margin: 48px 0 0 0;
 		background-color: transparent;
 	}
 	.navbar-inverse .navbar-nav > li > a {
@@ -319,30 +320,6 @@ textarea {
 	.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
 		color: #3997d7;
 	}
-	.banner-title {
-		display: block;
-		background: url(/assets/img/box-bg.png) repeat-x scroll 0 -1200px;
-		width: 190px;
-		height: 190px;
-		position: absolute;
-		right: 30px;
-		top: 30px;
-		font-size: 24px;
-		color: #FFFFFF;
-		line-height: 190px;
-		padding: 0 20px;
-	}
-	.banner-title span {
-		display: inline-block;
-		vertical-align: middle;
-		line-height: 40px;
-	}
-	.box {
-		padding: 0 30px;
-	}
-	.box-content, .page-content {
-		padding: 20px 30px;
-	}
 	.read-more-bt {
 		display: none !important;
 	}
@@ -352,17 +329,9 @@ textarea {
 	.box-open .box-title {
 		width: 200px;
 		height: 200px;
-		left: 30px;
 		top: 28px;
 		line-height: 35px;
 		padding: 10px 20px;
-	}
-	.box > h1, .container >h1 {
-		padding-left: 30px;
-		margin-bottom: 0;
-	}
-	.box-content > :first-child, .page-content > :first-child, .col-sm-6 > :first-child, .read-more > :first-child {
-		margin-top: 0;
 	}
 	.box-title {
 		font-size: 24px;
@@ -386,19 +355,10 @@ textarea {
 		font-size: 130%;
 		padding-left: 20px;
 	}
-	.footer .logo {
-		padding-left: 30px;
-	}
 	.footer .logo img {
-		height: 50px;
+		height: 60px;
 	}
-	.footer .sep {
-		display: none;
-	}
-
-	.footer .valued-clients img, .footer .associates img {
-		max-width: 120px;
-	}
+	.footer .contact { text-align: right;}
 }
 
 @media (min-width: 992px) {
