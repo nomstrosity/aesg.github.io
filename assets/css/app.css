@@ -16,6 +16,7 @@ h3 {
     line-height: 1.4;
 }
 main { margin-bottom: 40px; }
+.form-control { max-width: 300px; }
 .navbar {
     height: 80px;
 }
