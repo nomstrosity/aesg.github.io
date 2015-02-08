@@ -255,7 +255,7 @@ textarea {
 .footer .valued-clients table {
     width: 100%;
 }
-.footer .valued-clients img { height: 55px; max-width: 130px; margin: 20px 10px; }
+.footer .valued-clients img { max-width: 130px; margin: 20px 10px; }
 
 @media (min-width: 768px) {
     body {
@@ -273,7 +273,6 @@ textarea {
     blockquote {
         font-size: 14px;
     }
-    .footer .valued-clients img { height: 65px; }
     .navbar {
         height: 138px;
         margin: 0;
@@ -341,7 +340,7 @@ textarea {
         display: none;
     }
     .box-image {
-        right: 40px;
+        right: 10px;
     }
     .box-open {
         padding: 0;
