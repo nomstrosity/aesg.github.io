@@ -70,8 +70,7 @@ main { margin-bottom: 40px; }
     background-size: cover;
     background-position: center;
     background-color: #EEE;
-    height: 250px;
-    margin: 0 -20px;
+    height: 240px;
 }
 .banner-title {
     display: block;
@@ -83,7 +82,7 @@ main { margin-bottom: 40px; }
     line-height: 190px;
     padding: 0 20px;
     float: right;
-    margin: 30px;
+    margin: 25px;
 }
 .banner-title span {
     display: inline-block;
@@ -189,8 +188,7 @@ main { margin-bottom: 40px; }
     right: auto;
     top: auto;
     width: auto;
-    margin: 0 -20px;
-    height: 150px;
+    height: 140px;
     cursor: pointer;
 }
 .box-open .box-title {
@@ -241,7 +239,10 @@ textarea {
 .footer {
     color: #FFFFFF;
 }
-
+.footer .logo img {
+    height: 70px;
+    margin-bottom: 10px;
+}
 .footer .associates {
     padding-top: 30px;
     padding-bottom:40px;
@@ -278,8 +279,8 @@ textarea {
         margin: 0;
     }
     .navbar-brand img {
-        width: 108px;
-        height: 108px;
+        width: 90px;
+        height: 90px;
     }
     .navbar-fixed-top {
         background: url(/assets/img/header-bg.jpg) repeat-x top center #FFF;
@@ -327,7 +328,7 @@ textarea {
     .box-open .box-title {
         width: 200px;
         height: 200px;
-        top: 28px;
+        top: 20px;
         line-height: 35px;
         padding: 10px 20px;
     }
@@ -347,7 +348,7 @@ textarea {
         cursor: default;
     }
     .box-open .box-image {
-        height: 256px;
+        height: 240px;
     }
     .footer-top-title {
         font-size: 130%;
@@ -357,6 +358,13 @@ textarea {
         height: 60px;
     }
     .footer .contact { text-align: right;}
+    .banner {
+        margin: 0 -20px;
+    }
+
+    .box-open .box-image {
+        margin: 0 -20px;
+    }
 }
 
 @media (min-width: 992px) {
